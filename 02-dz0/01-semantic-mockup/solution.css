@@ -1,0 +1,38 @@
+.header {
+    background: #00A383;
+    padding: 30px;
+    margin-bottom: 0;
+
+}
+nav {
+    background: #34D1B2;
+    font-size: 20px;
+    padding: 30px;
+
+}
+a {
+    padding-left: 10px;
+}
+header {
+    text-align: center;
+
+}
+main {
+    background: #5ED1BA;
+    padding: 20px;
+}
+
+article {
+    background: #1F7A68;
+    font-size: 20px;
+    padding: 30px;
+    margin-bottom: 5px;
+
+}
+
+footer {
+    background: #006A55;
+    text-align: center;
+        padding: 30px;
+
+}

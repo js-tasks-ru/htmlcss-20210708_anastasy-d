@@ -41,5 +41,5 @@
   flex: 1;
   align-self: flex-end;
   background: var(--blue);
-  margin: 1px;
+  margin-right: 1px;
 }

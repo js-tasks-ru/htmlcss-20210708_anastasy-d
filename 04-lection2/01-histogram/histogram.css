@@ -9,8 +9,8 @@
   line-height: 24px;
   padding: 20px;
 }
-.flex-container {
-  display: flex
+.histogram__header {
+  display: flex;
 }
 
 .histogram__link {

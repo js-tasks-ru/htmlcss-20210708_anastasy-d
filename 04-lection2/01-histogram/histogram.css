@@ -8,15 +8,16 @@
   font-size: 16px;
   line-height: 24px;
   padding: 20px;
-  position: relative;
+}
+.flex-container {
+  display: flex
 }
 
 .histogram__link {
   color: var(--blue);
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 20px;
+}
+.histogram__label {
+  flex-grow: 1;
 }
 
 .histogram__value {
@@ -32,16 +33,13 @@
 .histogram__element-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-top: 40px;
+  margin-top: 40px;
 }
 
 .histogram__element {
-  width: 10px;
+  flex-basis: 10px;
   flex: 1;
   align-self: flex-end;
   background: var(--blue);
-  padding: 1px;
   margin: 1px;
 }

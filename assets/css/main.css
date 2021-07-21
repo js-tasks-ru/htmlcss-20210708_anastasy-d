@@ -9,8 +9,11 @@
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
-    --grey-3: #ACB5BD;
-    --grey-4: #495057;
+    --grey-3: #E2E6E8;
+    --grey-4: #E3E7EA;
+    --grey-5: #F3F5F5;
+    --grey-6: #ACB5BD;
+    --grey-7: #495057;
 
     --error: var(--red);
     --success: var(--blue);

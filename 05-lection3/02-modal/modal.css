@@ -5,7 +5,7 @@ html {
 }
 .button_primary {
   color: var(--white);
-  background: var(--blue);
+  background: var(--primary);
 }
 .button {
   padding: 0 65px;

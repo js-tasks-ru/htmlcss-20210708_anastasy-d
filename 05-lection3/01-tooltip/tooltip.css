@@ -1,45 +1,46 @@
-body, html {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
+body,
+html {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 .tooltip {
-    display: flex;
-    position: relative;
-    flex-direction: row-reverse;
+  display: inline-flex;
+  position: relative;
+  flex-direction: row-reverse;
 }
 
 .tooltip__trigger {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .tooltip__help {
-    background: #4263EB;
-    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
-    border-radius: 10px;
-    color: var(--white);
-    padding: 13px 21px;
-    width: fit-content;
-    padding: 13px 21px 8px 21px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: none;
-    text-align: center;
+  background: var(--blue);
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 10px;
+  color: var(--white);
+  padding: 13px 21px;
+  width: fit-content;
+  padding: 13px 21px 8px 21px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  text-align: center;
 }
 
 .tooltip__help:after {
-    content: "";
-    border: 14px solid transparent;
-    border-top: 6px solid #4263EB;
-    position: absolute;
-    left: 50%;
-    transform: translate(-54%, 135%);
+  content: "";
+  border: 14px solid transparent;
+  border-top: 6px solid #4263eb;
+  position: absolute;
+  left: 50%;
+  transform: translate(-54%, 135%);
 }
 
 .tooltip__trigger:hover ~ .tooltip__help {
-    display: block;
+  display: block;
 }

@@ -15,29 +15,29 @@
 }
 
 .button_primary {
-    color: #FFFFFF;
-    background: #4263EB;
+    color: var(--white);
+    background: var(--primary);
 }
 .button_primary:hover {
     cursor: pointer;
-    background:  #2342C0;
+    background: var(--blue-2);
 }
 
 .button_secondary {
-    color: #FFFFFF;
-    background: #7048E8;
+    color: var(--white);
+    background: var(--secondary);
 }
 .button_secondary:hover {
     cursor: pointer;
-    background: #5028C6;
+    background: var(--purple-2);
 }
 
 .button_alternate {
-    color: #495057;
-    background: #FFFFFF;
-    border: 1px solid #ACB5BD;
+    color: var(--grey-4);
+    background: var(--white);
+    border: 1px solid var(--grey-3);
 }
 .button_alternate:hover {
     cursor: pointer;
-    border: 1px solid #212429;
+    border: 1px solid var(--black);
 }

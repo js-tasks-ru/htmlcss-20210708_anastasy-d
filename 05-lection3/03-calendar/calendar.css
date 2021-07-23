@@ -1,0 +1,34 @@
+.calendar {
+  width: 100%;
+  max-width: 304px;
+  height: 324px;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 28px 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar__title {
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.calendar__wrapper {
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.calendar__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar__item {
+  align-content: center;
+}

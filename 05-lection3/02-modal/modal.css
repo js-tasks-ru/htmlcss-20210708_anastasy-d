@@ -19,7 +19,7 @@
 .modal__window {
   width: 428px;
   height: 294px;
-  background: #ffffff;
+  background: var(--white);
   border-radius: 8px;
   position: absolute;
   left: 50%;

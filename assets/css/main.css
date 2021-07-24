@@ -3,6 +3,7 @@
 :root {
   --white: #ffffff;
   --black: #212429;
+  --black-2: #334d6e;
   --pink: #f784ad;
   --purple-1: #7048e8;
   --purple-2: #5028c6;
@@ -16,10 +17,9 @@
   --grey-5: #f3f5f5;
   --grey-6: #acb5bd;
   --grey-7: #495057;
-  --grey-8: #90a0b7;
 
   --error: var(--red);
-  --success: var(--blue);
+  --success: var(--blue-1);
 
   --primary: var(--blue-1);
   --secondary: var(--purple-1);
@@ -27,4 +27,10 @@
 
 * {
   font-family: "Roboto", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
 }

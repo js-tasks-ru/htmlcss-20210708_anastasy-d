@@ -39,7 +39,7 @@
   background: rgba(160, 177, 245, 0.5);
 }
 .calendar__item_day {
-  color: var(--grey-5);
+  color: var(--grey-8);
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;

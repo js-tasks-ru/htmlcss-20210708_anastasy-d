@@ -11,9 +11,12 @@
   --red: #f03d3e;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
-  --grey-3: #acb5bd;
-  --grey-4: #495057;
-  --grey-5: #90a0b7;
+  --grey-3: #e2e6e8;
+  --grey-4: #e3e7ea;
+  --grey-5: #f3f5f5;
+  --grey-6: #acb5bd;
+  --grey-7: #495057;
+  --grey-8: #90a0b7;
 
   --error: var(--red);
   --success: var(--blue);

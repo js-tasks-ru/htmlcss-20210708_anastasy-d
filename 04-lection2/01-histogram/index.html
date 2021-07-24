@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <!-- Страница с гистограммой -->
 <html lang="ru">
-  <head>
-    <link rel="stylesheet" href="../../assets/css/main.css" />
-    <link rel="stylesheet" href="./histogram.css" />
-  </head>
-  <body>
-    <div id="histogram" class="histogram">
-      <div  class="histogram__header">
-        <div class="histogram__label">Total orders</div>
-        <div class="histogram__link">View All</div>
-      </div>
-      <div class="histogram__value">50254</div>
-      <div id="container" class="histogram__element-container"></div>
-    </div>
-    <script>
-      (function createDivs() {
-        const toAdd = document.createDocumentFragment();
-        const MAX_ELEMENT_AMOUNT = 35
 
-        for (let i = 0; i < MAX_ELEMENT_AMOUNT; i++) {
-          const div = document.createElement('div');
-          div.className = 'histogram__element';
-          div.style.height = `${Math.floor(Math.random() * 60) + 10}px`;
-          toAdd.appendChild(div);
-        }
-        document.getElementById('container').appendChild(toAdd);
-      })();
-    </script>
-  </body>
+<head>
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+  <link rel="stylesheet" href="./histogram.css" />
+</head>
+
+<body>
+  <div id="histogram" class="histogram">
+    <div class="histogram__header">
+      <div class="histogram__label">Total orders</div>
+      <div class="histogram__link">View All</div>
+    </div>
+    <div class="histogram__value">50254</div>
+    <div id="container" class="histogram__element-container"></div>
+  </div>
+  <script>
+    (function createDivs() {
+      const toAdd = document.createDocumentFragment();
+      const MAX_ELEMENT_AMOUNT = 35
+
+      for (let i = 0; i < MAX_ELEMENT_AMOUNT; i++) {
+        const div = document.createElement('div');
+        div.className = 'histogram__element';
+        div.style.height = `${Math.floor(Math.random() * 60) + 10}px`;
+        toAdd.appendChild(div);
+      }
+      document.getElementById('container').appendChild(toAdd);
+    })();
+  </script>
+</body>
+
 </html>

@@ -4,7 +4,6 @@
   --white: #ffffff;
   --black: #212429;
   --black-2: #334d6e;
-  --pink: #f784ad;
   --purple-1: #7048e8;
   --purple-2: #5028c6;
   --blue-1: #4263eb;
@@ -12,8 +11,11 @@
   --red: #f03d3e;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
-  --grey-3: #acb5bd;
-  --grey-4: #495057;
+  --grey-3: #e2e6e8;
+  --grey-4: #e3e7ea;
+  --grey-5: #f3f5f5;
+  --grey-6: #acb5bd;
+  --grey-7: #495057;
 
   --error: var(--red);
   --success: var(--blue-1);

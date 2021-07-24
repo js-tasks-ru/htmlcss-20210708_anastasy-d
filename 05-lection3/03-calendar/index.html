@@ -3,8 +3,8 @@
 <html lang="ru">
 
 <head>
-    <link rel="stylesheet" href="../../assets/css/main.css">
-    <link rel="stylesheet" href="./calendar.css">
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./calendar.css" />
     <title>Calendar</title>
 </head>
 
@@ -12,33 +12,38 @@
     <div class="calendar">
         <div class="calendar__title">October 2020</div>
         <div id="calendar__wrapper" class="calendar__wrapper">
-            <div id="calendar__inner" class="calendar__inner">
-            </div>
+            <div id="calendar__inner" class="calendar__inner"></div>
         </div>
     </div>
     <script>
-        (function createDivs() {
+        (function createItems() {
             const toAdd = document.createDocumentFragment();
-            // const MAX_ELEMENT_AMOUNT = 35
-            const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+            const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
             for (let day of days) {
-                const span = document.createElement('span');
-                span.className = 'calendar__item';
-                span.innerHTML = day
+                const span = document.createElement("span");
+                span.className = "calendar__item calendar__item_day";
+                span.innerHTML = day;
                 toAdd.appendChild(span);
             }
             for (let i = 0; i < 4; i++) {
-                const span = document.createElement('span');
-                span.className = 'calendar__item';
+                const span = document.createElement("span");
+                span.className = "calendar__item";
                 toAdd.appendChild(span);
             }
             for (let i = 1; i <= 31; i++) {
-                const span = document.createElement('span');
-                span.className = 'calendar__item';
-                span.innerHTML = i
+                const span = document.createElement("span");
+                span.className = `calendar__item ${i === 18 || i === 23
+                    ? "calendar__item_active"
+                    : [19, 20, 21, 22].includes(i)
+                        ? "calendar__item_between_active"
+                        : ""
+
+                    }`;
+
+                span.innerHTML = i;
                 toAdd.appendChild(span);
             }
-            document.getElementById('calendar__inner').appendChild(toAdd);
+            document.getElementById("calendar__inner").appendChild(toAdd);
         })();
     </script>
 </body>

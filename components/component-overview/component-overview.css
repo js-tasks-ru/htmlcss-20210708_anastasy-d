@@ -1,7 +1,5 @@
-.page__card {
-  height: 746px;
+.component-overview {
   background: #ffffff;
   box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
   border-radius: 12px;
-  grid-area: "card";
 }

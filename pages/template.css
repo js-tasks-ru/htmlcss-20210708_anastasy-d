@@ -5,8 +5,26 @@
 .page__main {
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-areas: "sidebar card";
+  grid-template-areas: "sidebar component-overview";
   column-gap: 56px;
   background: var(--grey-9);
   padding: 36px;
+}
+
+.page__component-overview {
+  grid-area: "component-overview";
+}
+
+.page__sidebar {
+  grid-area: "sidebar";
+  gap: 10px;
+  padding-left: 40px;
+}
+
+.page__sidebar__menu-item:last-child {
+  margin-top: 30px;
+}
+
+.page__sidebar__menu-item_selected {
+  color: var(--red);
 }

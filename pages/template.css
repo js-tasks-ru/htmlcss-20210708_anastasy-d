@@ -2,59 +2,11 @@
   margin: 0 auto;
 }
 
-.header_height {
-  height: 82px;
-}
-
 .page__main {
-  display: grid;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-areas: "sidebar card";
-  padding: 36px 165px 166px 0px;
-  background: var(--grey-9);
   column-gap: 56px;
-}
-
-.page__card {
-  height: 746px;
-  background: #ffffff;
-  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
-  border-radius: 12px;
-  grid-area: "card";
-}
-
-.page__sidebar {
-  width: 300px;
-  grid-area: "sidebar";
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-left: 165px;
-}
-
-.page__sidebar_title {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 26px;
-  margin-bottom: 16px;
-}
-
-.page__sidebar_menu_item {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 22px;
-  color: var(--black);
-}
-
-.page__sidebar_menu_item_selected {
-  color: var(--red);
-}
-
-.page__sidebar_menu_item:last-child {
-  margin-top: 30px;
+  background: var(--grey-9);
+  padding: 36px;
 }

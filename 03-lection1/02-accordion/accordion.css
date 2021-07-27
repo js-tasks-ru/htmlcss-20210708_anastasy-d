@@ -1,34 +1,47 @@
 .accordion__item {
-    background: var(--white);
-    border: 1px solid var(--grey-3);
-    box-sizing: border-box;
-    border-radius: 8px;
-    max-width: 730px;
-    min-height: 72px;
-    padding: 24px 32px;
-    margin-bottom: 8px;
+  background: var(--white);
+  border: 1px solid var(--grey-3);
+  box-sizing: border-box;
+  border-radius: 8px;
+  max-width: 730px;
+  min-height: 72px;
+  padding: 24px 32px;
+  margin-bottom: 8px;
 }
 
 .accordion__summary,
 .accordion__details {
-    font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .accordion__summary {
-    list-style: none;
+  list-style: none;
+  position: relative;
 }
 
 .accordion__item[open] {
-    min-height: 144px;
+  min-height: 144px;
 }
 
 .accordion__details {
-    color: var(--grey-4);
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 8px;
+  color: var(--grey-7);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
 }
 
 .accordion__item:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
+}
+
+.accordion__summary-marker {
+  color: var(--black);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 0;
+}
+
+.accordion__item[open] > .accordion__summary > .accordion__summary-marker {
+  transform: rotate(180deg);
 }

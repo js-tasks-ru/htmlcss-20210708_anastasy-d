@@ -1,22 +1,22 @@
-.page__box {
-  margin: 0 auto;
-}
+/* .page__box {
+} */
 
 .page__main {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-areas: "sidebar component-overview";
+  grid-template-areas: 'sidebar component-overview';
   column-gap: 56px;
   background: var(--grey-9);
   padding: 36px;
 }
 
 .page__component-overview {
-  grid-area: "component-overview";
+  grid-area: 'component-overview';
 }
 
 .page__sidebar {
-  grid-area: "sidebar";
+  grid-area: 'sidebar';
   gap: 10px;
   padding-left: 40px;
 }

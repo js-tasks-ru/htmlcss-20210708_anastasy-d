@@ -4,6 +4,8 @@
 }
 
 .checkbox__icon {
+  width: 15px;
+  height: 13px;
   position: absolute;
   top: 50%;
   left: 50%;

@@ -1,6 +1,11 @@
-.checkbox__input,
-.checkbox__icon {
+.checkbox__input {
   opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.checkbox__icon {
+  display: none;
 }
 
 .checkbox__icon {
@@ -46,7 +51,7 @@
 }
 
 .checkbox__input:checked ~ .checkbox__state .checkbox__icon {
-  opacity: 1;
+  display: block;
 }
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__control {

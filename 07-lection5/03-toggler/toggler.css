@@ -42,7 +42,7 @@
   transition: all 0.2s ease-in-out;
 }
 .toggler__input:checked ~ .toggler__state .toggler__control::after {
-  margin-left: 45%;
+  margin-left: 23px;
   background: var(--white);
 }
 
